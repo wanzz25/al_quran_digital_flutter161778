@@ -1,0 +1,37 @@
+name: al_quran_digital
+description: "Al-Qur'an Digital - Bacaan Sholat, Zikir, Asmaul Husna & Al-Qur'an"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.0
+  audioplayers: ^6.0.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/icon.png
+    - assets/quran/quran_id.json
+
+# Konfigurasi auto-generate icon launcher untuk Android & iOS
+# Jalankan: flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#059669"
+  adaptive_icon_foreground: "assets/icon/icon.png"
